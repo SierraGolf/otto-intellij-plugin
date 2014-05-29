@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.squareup.ideaplugin.otto;
+package de.quandoo.ideaplugin.otto;
 
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.vfs.VirtualFile;

@@ -1,4 +1,4 @@
-package com.squareup.ideaplugin.otto;
+package de.quandoo.ideaplugin.otto;
 
 import com.intellij.psi.PsiAnnotation;
 import com.intellij.psi.PsiClass;

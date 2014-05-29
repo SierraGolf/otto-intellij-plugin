@@ -1,4 +1,4 @@
-package com.squareup.ideaplugin.otto;
+package de.quandoo.ideaplugin.otto;
 
 import com.intellij.codeInsight.daemon.DaemonCodeAnalyzer;
 import com.intellij.find.FindManager;

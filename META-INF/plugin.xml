@@ -1,8 +1,7 @@
 <idea-plugin version="2">
-  <id>com.squareup.ideaplugin.otto</id>
-  <name>Otto Plugin</name>
+  <id>de.quandoo.ideaplugin.otto</id>
+  <name>Quandoo - Otto Plugin</name>
   <version>1.0</version>
-  <vendor email="support@squareup.com" url="http://square.github.io">Square, Inc.</vendor>
 
   <description><![CDATA[
     Provides actions which allow you quickly move around the event bus.
@@ -16,33 +15,17 @@
     1.0.0: Initial version.
   ]]></change-notes>
 
-  <!-- please see http://confluence.jetbrains.net/display/IDEADEV/Build+Number+Ranges for description -->
   <idea-version since-build="107.105"/>
 
-  <!-- please see http://confluence.jetbrains.net/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
-       on how to target different products -->
-  <!-- uncomment to enable plugin in all products
-  <depends>com.intellij.modules.lang</depends>
-  -->
-
-  <application-components>
-    <!-- Add your application components here -->
-  </application-components>
-
   <project-components>
-    <!-- Add your project components here -->
     <component>
-      <implementation-class>com.squareup.ideaplugin.otto.OttoProjectHandler</implementation-class>
+      <implementation-class>de.quandoo.ideaplugin.otto.OttoProjectHandler</implementation-class>
     </component>
   </project-components>
 
-  <actions>
-    <!-- Add your actions here -->
-  </actions>
-
   <extensions defaultExtensionNs="com.intellij">
     <codeInsight.lineMarkerProvider language="JAVA"
-        implementationClass="com.squareup.ideaplugin.otto.OttoLineMarkerProvider"/>
-    <implicitUsageProvider implementation="com.squareup.ideaplugin.otto.OttoImplicitUsageProvider"/>
+        implementationClass="de.quandoo.ideaplugin.otto.OttoLineMarkerProvider"/>
+    <implicitUsageProvider implementation="de.quandoo.ideaplugin.otto.OttoImplicitUsageProvider"/>
   </extensions>
 </idea-plugin>

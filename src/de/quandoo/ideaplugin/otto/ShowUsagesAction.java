@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.squareup.ideaplugin.otto;
+package de.quandoo.ideaplugin.otto;
 
 import com.intellij.CommonBundle;
 import com.intellij.codeInsight.hint.HintManager;

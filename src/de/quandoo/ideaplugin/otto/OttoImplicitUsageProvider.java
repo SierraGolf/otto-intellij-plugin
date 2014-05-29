@@ -1,11 +1,8 @@
-package com.squareup.ideaplugin.otto;
+package de.quandoo.ideaplugin.otto;
 
 import com.intellij.codeInsight.daemon.ImplicitUsageProvider;
 import com.intellij.psi.PsiElement;
 import com.intellij.psi.PsiMethod;
-
-import static com.squareup.ideaplugin.otto.SubscriberMetadata.isAnnotatedWithProducer;
-import static com.squareup.ideaplugin.otto.SubscriberMetadata.isAnnotatedWithSubscriber;
 
 /**
  * Indicates to intellij that any subscriber or producer methods are actually used implicitly
@@ -18,7 +15,7 @@ public class OttoImplicitUsageProvider implements ImplicitUsageProvider {
       return false;
 
     PsiMethod method = (PsiMethod) psiElement;
-    return isAnnotatedWithSubscriber(method) || isAnnotatedWithProducer(method);
+    return SubscriberMetadata.isAnnotatedWithSubscriber(method) || SubscriberMetadata.isAnnotatedWithProducer(method);
   }
 
   @Override

@@ -1,4 +1,4 @@
-package com.squareup.ideaplugin.otto;
+package de.quandoo.ideaplugin.otto;
 
 import com.intellij.psi.PsiClass;
 import com.intellij.psi.PsiElement;
@@ -22,7 +22,8 @@ public class BusPostDecider implements Decider {
       PsiType[] expressionTypes = methodCall.getArgumentList().getExpressionTypes();
       for (PsiType expressionType : expressionTypes) {
         PsiClass argumentEventClass = PsiConsultantImpl.getClass(expressionType);
-        if (argumentEventClass.equals(this.eventClass)) {
+
+        if (this.eventClass.equals(argumentEventClass)) {
           return true;
         }
       }
