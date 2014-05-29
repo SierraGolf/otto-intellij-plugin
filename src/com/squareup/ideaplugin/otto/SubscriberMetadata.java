@@ -20,8 +20,12 @@ public class SubscriberMetadata {
       new SubscriberMetadata("com.squareup.otto.Subscribe", "com.squareup.otto.Bus", "com.squareup.otto.Produce",
           PickAction.Type.PRODUCER, PickAction.Type.EVENT_POST),
 
+      new SubscriberMetadata("com.squareup.otto.Subscribe", "de.lobu.android.booking.bus.IBus", "com.squareup.otto.Produce",
+          PickAction.Type.PRODUCER, PickAction.Type.EVENT_POST),
+
       new SubscriberMetadata("com.google.common.eventbus.Subscribe", "com.google.common.eventbus.EventBus", null,
           PickAction.Type.EVENT_POST)
+
   );
 
   public static ImmutableSet<SubscriberMetadata> getAllSubscribers() {
